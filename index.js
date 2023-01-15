@@ -1,62 +1,43 @@
-let homeScoreBtnOne = document.getElementById("home-score-btn-1")
+let scoreHomeEl = document.getElementById("score-home")
+let scoreHome = 0
 
-let homeScoreBtnTwo = document.getElementById("home-score-btn-2")
+let scoreGuestEl = document.getElementById("score-guest")
+let scoreGuest = 0
 
-let homeScoreBtnThree = document.getElementById("home-score-btn-3")
+const homeBtn1 = document.getElementById("home-btn1")
+const homeBtn2 = document.getElementById("home-btn2")
+const homeBtn3 = document.getElementById("home-btn3")
 
+const guestBtn1 = document.getElementById("guest-btn1")
+const guestBtn2 = document.getElementById("guest-btn2")
+const guestBtn3 = document.getElementById("guest-btn3")
 
-let homeStoreEl = document.getElementById("home-score")
+homeBtn1.addEventListener("click", function increaseHomeScore1() {
+    scoreHome += 1
+    scoreHomeEl.textContent = scoreHome
+})
 
-let homeScore = 0
+homeBtn2.addEventListener("click", function increaseHomeScore2() {
+    scoreHome += 2
+    scoreHomeEl.textContent = scoreHome
+})
 
-function increaseHomeScoreOne() {
-    
-    homeScore += 1
-    homeStoreEl.textContent = homeScore
-    
-}
+homeBtn3.addEventListener("click", function increaseHomeScore3() {
+    scoreHome += 3
+    scoreHomeEl.textContent = scoreHome
+})
 
-function increaseHomeScoreTwo() {
-    
-    homeScore += 2
-    homeStoreEl.textContent = homeScore
-}
+guestBtn1.addEventListener("click", function increaseGuestScore1() {
+    scoreGuest += 1
+    scoreGuestEl.textContent = scoreGuest
+})
 
-function increaseHomeScoreThree() {
-    
-    homeScore += 3
-    homeStoreEl.textContent = homeScore
-}
+guestBtn2.addEventListener("click", function increaseGuestScore2() {
+    scoreGuest += 2
+    scoreGuestEl.textContent = scoreGuest
+})
 
-
-let guestScoreBtnOne = document.getElementById("guest-score-btn-1")
-
-let guestScoreBtnTwo = document.getElementById("guest-score-btn-2")
-
-let guestScoreBtnThree = document.getElementById("guest-score-btn-3")
-
-
-let guestStoreEl = document.getElementById("guest-score")
-
-let guestScore = 0
-
-function increaseGuestScoreOne() {
-    
-    guestScore += 1
-    guestStoreEl.textContent = guestScore
-    
-}
-
-function increaseGuestScoreTwo() {
-    
-    guestScore += 2
-    guestStoreEl.textContent = guestScore
-    
-}
-
-function increaseGuestScoreThree() {
-    
-    guestScore += 3
-    guestStoreEl.textContent = guestScore
-    
-}
+guestBtn3.addEventListener("click", function increaseGuestScore3() {
+    scoreGuest += 3
+    scoreGuestEl.textContent = scoreGuest
+})
