@@ -41,3 +41,10 @@ guestBtn3.addEventListener("click", function increaseGuestScore3() {
     scoreGuest += 3
     scoreGuestEl.textContent = scoreGuest
 })
+
+function newGame() {
+    scoreGuest = 0
+    scoreHome = 0
+    scoreGuestEl.textContent = scoreGuest
+    scoreHomeEl.textContent = scoreHome
+}

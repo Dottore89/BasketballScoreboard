@@ -42,3 +42,15 @@ h3 {
     font-size: 90px;
     margin: 26px;
 }
+
+#new-game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#new-game-btn {
+    background: #F57E16;
+    font-size: 30px;
+    font-family: 'Happy Monkey', cursive;
+}
